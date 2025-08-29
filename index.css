@@ -5,7 +5,6 @@
 }
 
 .container {
-  border: 1px solid;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -13,6 +12,7 @@
   display: flex;
   text-align: center;
   gap: 50px;
+  text-align: center;
 }
 
 .tooltip-container1 {
@@ -37,6 +37,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
+  display: none;
 }
 
 .tooltip-content2 {
@@ -49,6 +50,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
+  display: none;
 }
 
 .tooltip-content3 {
@@ -61,6 +63,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
+  display: none;
 }
 
 .tooltip-content1::before {
@@ -97,5 +100,11 @@
 }
 
 .tooltip-container1:hover > .tooltip-content1 {
+  display: block;
+}
+.tooltip-container2:hover > .tooltip-content2 {
+  display: block;
+}
+.tooltip-container3:hover > .tooltip-content3 {
   display: block;
 }

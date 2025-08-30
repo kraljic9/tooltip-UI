@@ -38,6 +38,7 @@
   transform: translateX(-50%);
   width: 150px;
   display: none;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .tooltip-content2 {
@@ -107,4 +108,13 @@
 }
 .tooltip-container3:hover > .tooltip-content3 {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

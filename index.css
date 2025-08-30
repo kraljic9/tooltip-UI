@@ -13,6 +13,7 @@
   text-align: center;
   gap: 50px;
   text-align: center;
+  border: 1px solid;
 }
 
 .tooltip-container1 {
@@ -105,6 +106,8 @@
 }
 .tooltip-container2:hover > .tooltip-content2 {
   display: block;
+
+  animation: dropDown 0.5s ease-in-out;
 }
 .tooltip-container3:hover > .tooltip-content3 {
   display: block;
@@ -115,6 +118,17 @@
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropDown {
+  from {
+    bottom: 500%;
+    opacity: 0;
+  }
+  to {
+    bottom: 150%;
     opacity: 1;
   }
 }
